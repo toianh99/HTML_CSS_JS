@@ -20,35 +20,35 @@
 }
 .content_left img{
         width: 100%;
-        height: auto;
 }
 .content_right{
         width: 50%;
         padding-left: 3rem;
+        padding-right: 3rem;
         background-color: white;
 }
-form{
-    width: 70%;
-    
-    padding-right: 3rem;
-}
-.ip_n{
-    width: 100%;
-    padding: 0 0 0 3rem;
-    border: solid 1px;
-    height: 3rem;
-}
-.form_input{
-    position: relative;
-    margin-bottom: 1.5rem;
+fieldset{
+        position: relative;
+        margin:0 0 2rem 0;
+        height: 2rem;
+        border: solid 1px;
+        padding: 0.5rem;
 }
 .icon{
-    position: absolute;
-    top: 0;
-    left: 1rem;
-    line-height: 3rem;
+        position: absolute;
+         top: 1rem;
+         left: 1rem;
 }
-input[type='submit'] {
-        width: 120%;
+.input_form{
+        margin-left: 2rem;
+        border: 0;
+        padding-top: 0.5rem;
+        outline: none;
+}
+.form-submit{ 
         height: 3rem;
+}
+.btn-submit{
+        width: 100%;
+        height: 100%;
 }
