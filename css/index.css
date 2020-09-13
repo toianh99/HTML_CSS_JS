@@ -16,10 +16,23 @@
 .header__nav-list a{
    padding: 1rem 2rem;
 }
+.header__nav-list a:first-child, 
+.header__nav-list a:hover
+{
+    border-bottom:coral solid 2px;
+}
 header{
     border-bottom: black solid 1px;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    position: sticky;
+  top: 0;
+    background-color: white;
+  z-index: 9999999999999999999999999999;
+   
+}
+.content{
+    position: relative;
 }
 a{
     text-decoration: none;
@@ -27,7 +40,7 @@ a{
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides img {vertical-align: middle; }
 
 /* Slideshow container */
 .slideshow-container {
@@ -102,7 +115,7 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 .mySlides img{
-    height: 35rem;
+    height: 25rem;
 }
 /* Fading animation */
 .fade {
@@ -125,4 +138,60 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+.content__silde{
+    margin-bottom: 2rem;
+}
+.card__header--title{
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    background-color: #C9C9C9;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.card-child--container{
+    width: 20%;
+    margin: 1rem;
+    padding: 1rem;
+    border: black solid 1px;
+}
+.card-child-img img{
+    width: 100%;
+    height: auto;
+}
+.card-child-content{
+    text-align: left;
+    font-size: 15px;
+    height: 6.5rem;
+    overflow:hidden;
+}
+.card-child-footer{
+    display: flex;
+    justify-content: center;
+}
+.card-child-footer .btn-card{
+    padding: 1rem 2rem;
+    background-color: coral;
+    margin-top: 2rem;
+    border-radius: 45px;
+}
+.col-4{
+    width: 20%;
+}
+.home__footer--address, 
+.home__footer--contact,
+ .home__footer--pay,
+ .home__footer--policy{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+   text-align: center;
+}
+.home__footer{
+    border-top: black solid 1px;
+    margin-top: 2rem;
 }

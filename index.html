@@ -1,68 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
     <title>Home</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="wapper-home">
-        <header>
+      <header>
+        <div class="container">
+          <div class="header">
+            <div class="header__logo">
+              <img src="img/logo/logo-danger.png" alt="" />
+            </div>
+            <div class="header__nav">
+              <div class="header__nav-list">
+                <a href="#">Trang chủ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">Liên Hệ</a>
+                <a href="#">Thanh Toán</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="content">
             <div class="container">
-                <div class="header">
-                    <div class="header__logo">
-                        <img src="img/logo/logo-danger.png" alt="">
+                <div class="content__silde">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="img/slider/04.jpg" style="width: 100%" />
+                            <div class="text">SLIDE 1</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="img/slider/05.jpg" style="width: 100%" />
+                            <div class="text">SLIDE 2</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="img/slider/03.jpg" style="width: 100%" />
+                            <div class="text">SLIDE 3</div>
+                        </div>
+
+                                    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+                        <div class="dot__bottom" style="text-align: center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
                     </div>
-                    <div class="header__nav">
-                        <div class="header__nav-list">
-                            <a href="#">Trang chủ</a>
-                        <a href="#">Sản phẩm</a>
-                        <a href="#">Liên Hệ</a>
-                        <a href="#">Thanh Toán</a>
+                </div>
+                <!-- end slide -->
+                <div class="card_product-highlight">
+                        <div class="card__header--title">
+                            <h3>SẢN PHẨM NỔI BẬT</h3>
+                        </div>
+                        <div class="card__body--content">
+                            <div class="row">
+                                <div class="card-child--container">
+                                    <div class="card-child-img">
+                                        <img src="img/product/6.png" alt="">
+                                    </div>
+                                    <div class="card-child-content">
+                                        <p>Shoot professional photos and videos with this Canon EOS 
+                                            5D Mk V 24-70mm lens kit. 
+                                            A huge 30.4-megapixel full-frame sensor delivers
+                                            outstanding image clarity, and 4K video is possible
+                                            from this DSLR for powerful films. Ultra-precise autofocus 
+                                            and huge ISO ranges give you the images you want from this 
+                                            Canon EOS 5D Mk V 24-70mm lens kit.</p>
+                                    </div>
+                                    <div class="card-child-footer">
+                                        <a class="btn-card" href="#">Add To Card</a>
+                                    </div>
+                                </div>
+                                <div class="card-child--container">
+                                    <div class="card-child-img">
+                                        <img src="img/product/2.png" alt="">
+                                    </div>
+                                    <div class="card-child-content">
+                                        <p>Shoot professional photos and videos with this Canon EOS 
+                                            5D Mk V 24-70mm lens kit. 
+                                            A huge 30.4-megapixel full-frame sensor delivers
+                                            outstanding image clarity, and 4K video is possible
+                                            from this DSLR for powerful films. Ultra-precise autofocus 
+                                            and huge ISO ranges give you the images you want from this 
+                                            Canon EOS 5D Mk V 24-70mm lens kit.</p>
+                                    </div>
+                                    <div class="card-child-footer">
+                                        <a class="btn-card" href="#">Add To Card</a>
+                                    </div>
+                                </div>
+                                <div class="card-child--container">
+                                    <div class="card-child-img">
+                                        <img src="img/product/3.png" alt="">
+                                    </div>
+                                    <div class="card-child-content">
+                                        <p>Shoot professional photos and videos with this Canon EOS 
+                                            5D Mk V 24-70mm lens kit. 
+                                            A huge 30.4-megapixel full-frame sensor delivers
+                                            outstanding image clarity, and 4K video is possible
+                                            from this DSLR for powerful films. Ultra-precise autofocus 
+                                            and huge ISO ranges give you the images you want from this 
+                                            Canon EOS 5D Mk V 24-70mm lens kit.</p>
+                                    </div>
+                                    <div class="card-child-footer">
+                                        <a class="btn-card" href="#">Add To Card</a>
+                                    </div>
+                                </div>
+                                <div class="card-child--container">
+                                    <div class="card-child-img">
+                                        <img src="img/product/4.png" alt="">
+                                    </div>
+                                    <div class="card-child-content">
+                                        <p>Shoot professional photos and videos with this Canon EOS 
+                                            5D Mk V 24-70mm lens kit. 
+                                            A huge 30.4-megapixel full-frame sensor delivers
+                                            outstanding image clarity, and 4K video is possible
+                                            from this DSLR for powerful films. Ultra-precise autofocus 
+                                            and huge ISO ranges give you the images you want from this 
+                                            Canon EOS 5D Mk V 24-70mm lens kit.</p>
+                                    </div>
+                                    <div class="card-child-footer">
+                                        <a class="btn-card" href="#">Add To Card</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- end card-product-hilight -->
+                <div class="card_product-new">
+                    <div class="card__header--title">
+                        <h3>SẢN PHẨM Mới</h3>
+                    </div>
+                    <div class="card__body--content">
+                        <div class="row">
+                            <div class="card-child--container">
+                                <div class="card-child-img">
+                                    <img src="img/product/5.png" alt="">
+                                </div>
+                                <div class="card-child-content">
+                                    <p>Shoot professional photos and videos with this Canon EOS 
+                                        5D Mk V 24-70mm lens kit. 
+                                        A huge 30.4-megapixel full-frame sensor delivers
+                                        outstanding image clarity, and 4K video is possible
+                                        from this DSLR for powerful films. Ultra-precise autofocus 
+                                        and huge ISO ranges give you the images you want from this 
+                                        Canon EOS 5D Mk V 24-70mm lens kit.</p>
+                                </div>
+                                <div class="card-child-footer">
+                                    <a class="btn-card" href="#">Add To Card</a>
+                                </div>
+                            </div>
+                            <div class="card-child--container">
+                                <div class="card-child-img">
+                                    <img src="img/product/11.png" alt="">
+                                </div>
+                                <div class="card-child-content">
+                                    <p>Shoot professional photos and videos with this Canon EOS 
+                                        5D Mk V 24-70mm lens kit. 
+                                        A huge 30.4-megapixel full-frame sensor delivers
+                                        outstanding image clarity, and 4K video is possible
+                                        from this DSLR for powerful films. Ultra-precise autofocus 
+                                        and huge ISO ranges give you the images you want from this 
+                                        Canon EOS 5D Mk V 24-70mm lens kit.</p>
+                                </div>
+                                <div class="card-child-footer">
+                                    <a class="btn-card" href="#">Add To Card</a>
+                                </div>
+                            </div>
+                            <div class="card-child--container">
+                                <div class="card-child-img">
+                                    <img src="img/product/12.png" alt="">
+                                </div>
+                                <div class="card-child-content">
+                                    <p>Shoot professional photos and videos with this Canon EOS 
+                                        5D Mk V 24-70mm lens kit. 
+                                        A huge 30.4-megapixel full-frame sensor delivers
+                                        outstanding image clarity, and 4K video is possible
+                                        from this DSLR for powerful films. Ultra-precise autofocus 
+                                        and huge ISO ranges give you the images you want from this 
+                                        Canon EOS 5D Mk V 24-70mm lens kit.</p>
+                                </div>
+                                <div class="card-child-footer">
+                                    <a class="btn-card" href="#">Add To Card</a>
+                                </div>
+                            </div>
+                            <div class="card-child--container">
+                                <div class="card-child-img">
+                                    <img src="img/product/apple-macbook.jpg" alt="">
+                                </div>
+                                <div class="card-child-content">
+                                    <p>Shoot professional photos and videos with this Canon EOS 
+                                        5D Mk V 24-70mm lens kit. 
+                                        A huge 30.4-megapixel full-frame sensor delivers
+                                        outstanding image clarity, and 4K video is possible
+                                        from this DSLR for powerful films. Ultra-precise autofocus 
+                                        and huge ISO ranges give you the images you want from this 
+                                        Canon EOS 5D Mk V 24-70mm lens kit.</p>
+                                </div>
+                                <div class="card-child-footer">
+                                    <a class="btn-card" href="#">Add To Card</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- end header -->
-        <div class="content">
-            
-                <div class="content__silde">
-                    <div class="slideshow-container">
-
-                        <div class="mySlides fade">
-                          <img src="img/slider/04.jpg" style="width:100%">
-                          <div class="text">SLIDE 1</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <img src="img/slider/05.jpg" style="width:100%">
-                          <div class="text">SLIDE 2</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <img src="img/slider/03.jpg" style="width:100%">
-                          <div class="text">SLIDE 3</div>
-                        </div>
-                        
-                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-                        <div class="dot__bottom" style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span> 
-                            <span class="dot" onclick="currentSlide(2)"></span> 
-                            <span class="dot" onclick="currentSlide(3)"></span> 
-                          </div>
-                        </div>
-                        
-                        
+      </div>
+      <!-- end content -->
+      <div class="home__footer">
+         
+            <div class="row">
+                <div class="home__footer--address col-4">
+                    <h4>Địa chỉ cửa hàng: </h4>
+                    <a href="#">Mộ Lao -Hà Đông-Hà Nội</a><br>
+                    <a href="#">Vũ Thư-Thái Bình</a><br>
+                    <a href="#">Quận 1-Tân Bình-HCM</a>
                 </div>
-                
-        </div>
-       
+                <div class="home__footer--contact col-4">
+                    <h4>Số điện thoại liên hệ </h4>
+                    <a href="#">sdt: 0965402971</a><br>
+                    <a href="#">sdt: 0123456789</a><br>
+                    <a href="#">sdt: 0987654321</a>
+                </div>
+                <div class="home__footer--pay col-4">
+                    <h4>Hình thức thanh toán: </h4>
+                    <a href="#">Trả góp</a><br>
+                    <a href="#">Tiền mặt</a><br>
+                    <a href="#">Thẻ ngân hàng</a>
+                </div>
+                <div class="home__footer--policy col-4">
+                    <h4>Các Chính sách: </h4>
+                    <a href="#">Chính sách bảo hành</a><br>
+                    <a href="#">Chính sách mua hàng</a><br>
+                    <a href="#">Chính sách đổi-trả</a>
+                </div>
+            </div>
+         
+      </div>
     </div>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
