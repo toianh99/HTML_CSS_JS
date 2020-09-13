@@ -6,6 +6,7 @@ function Login(){
         alert("Đăng nhập thành công");
     }
     else{
+        alert('tài khoản mật khẩu không đúng');
         document.getElementById('form_login').action='login.html';
     }
     
