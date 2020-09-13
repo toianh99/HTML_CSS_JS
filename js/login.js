@@ -5,8 +5,10 @@ function Login(){
        
         alert("Đăng nhập thành công");
     }
-    else
-    document.getElementById('form_login').action='login.html';
+    else{
+        document.getElementById('form_login').action='login.html';
+    }
+    
 }
 // function getUserName(){
 //     x=document.getElementById('username').value;
