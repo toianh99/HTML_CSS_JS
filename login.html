@@ -19,13 +19,15 @@
                         <p>Please login your account</p>
                     </div>
                     <div class="content_right-body">
-                        <form action="">
+                        <form id="form_login" action="/index.html" onsubmit="Login()" method="post">
                             <fieldset>
-                                <input type="text" class="input_form" placeholder="username" name="username">
+                                <input type="text"id="username" class="input_form" placeholder="username"
+                                onchange="getUserName()" name="username">
                                 <div class="icon"><i class="far fa-user"></i></div>
                             </fieldset>
                             <fieldset>
-                                <input type="password" class="input_form" placeholder="password" name="password">
+                                <input type="password" id="password" class="input_form"
+                                onchange="getPassword()" placeholder="password" name="password">
                                 <div class="icon"><i class="far fa-lock"></i></div>
                             </fieldset>
                             <div class="form-submit">
@@ -36,5 +38,6 @@
                 </div>
             </div>
     </div>
+    <script src="js/login.js"></script>
 </body>
 </html>
